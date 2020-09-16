@@ -20,7 +20,7 @@
 		let cargoMass = document.querySelector("input[name=cargoMass]").value;
       
 
-      if (pilotName === null || pilotName === "" || copilotName === null || copilotName === "" || isNaN(fuelLevel) || fuelLevel === "" || isNaN(cargoMass) || cargoMass === "") {
+      if ( pilotName === "" || copilotName === "" ||  fuelLevel === "" || cargoMass === "") {
           alert("All fields are required!");
       //    //return false;
       //    //event.preventDefault();
@@ -28,8 +28,8 @@
       //    alert("All fields are required!");
       //    //return false;
       //    //event.preventDefault();
-      // } if (isNaN(fuelLevel) || fuelLevel === "") {
-      //    alert("Make sure to enter valid information for each field!");
+       } else if (isNaN(fuelLevel) ||isNaN(cargoMass) ) {
+          alert("Make sure to enter valid information for each field!");
       //    //return false;
       //    //event.preventDefault();
       // } if (isNaN(cargoMass) || cargoMass === "") {
