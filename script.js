@@ -20,22 +20,22 @@
 		let cargoMass = document.querySelector("input[name=cargoMass]").value;
       
 
-      if (pilotName === null || pilotName === "") {
-         alert("All fields are requried!");
-         //return false;
-         //event.preventDefault();
-      } if (copilotName === null || copilotName === "") {
-         alert("All fields are required!");
-         //return false;
-         //event.preventDefault();
-      } if (isNaN(fuelLevel) || fuelLevel === "") {
-         alert("Make sure to enter valid information for each field!");
-         //return false;
-         //event.preventDefault();
-      } if (isNaN(cargoMass) || cargoMass === "") {
-         alert("Make sure to enter valid information for each field!");
-         //return false;
-         //event.preventDefault();
+      if (pilotName === null || pilotName === "" || copilotName === null || copilotName === "" || isNaN(fuelLevel) || fuelLevel === "" || isNaN(cargoMass) || cargoMass === "") {
+          alert("All fields are required!");
+      //    //return false;
+      //    //event.preventDefault();
+      // } if (copilotName === null || copilotName === "") {
+      //    alert("All fields are required!");
+      //    //return false;
+      //    //event.preventDefault();
+      // } if (isNaN(fuelLevel) || fuelLevel === "") {
+      //    alert("Make sure to enter valid information for each field!");
+      //    //return false;
+      //    //event.preventDefault();
+      // } if (isNaN(cargoMass) || cargoMass === "") {
+      //    alert("Make sure to enter valid information for each field!");
+      //    //return false;
+      //    //event.preventDefault();
       
       } else {
    
@@ -89,7 +89,7 @@
                      <li>Name: ${json[0].name}</li>
                      <li>Diameter: ${json[0].diameter}</li>
                      <li>Star: ${json[0].star}</li>
-                     <li>Distance from Earth: ${json[0].distance}</li>
+                     <li>Distance from Earth: ${json[0].distance}</li>git 
                      <li>Number of Moons: ${json[0].moons}</li>
                   </ol>
                   <img src="${json[0].image}"></img>
